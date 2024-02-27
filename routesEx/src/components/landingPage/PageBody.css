@@ -2,13 +2,21 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5f5f5; /* Light gray background */
     margin: 0;
-    padding: 0;
+    padding-top: 70px;
 }
-
-header {
+.space{
+    padding: 80px 0 ;
+margin-bottom: 40px;
+}
+.bg_shadow{
+    box-shadow: 1px 5px 24px -4px rgba(0,0,0,0.75);
+    padding: 40px;
+    border-radius: 10px;
+}
+/* header {
     text-align: center;
     padding: 50px 0;
-}
+} */
 
 main {
     padding: 20px;
@@ -16,52 +24,14 @@ main {
 section ul li{
     padding: 15px;
 }
-
-section {
-    background-color: #fff; /* White background */
-    border-radius: 20px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Soft box shadow */
-    margin-bottom: 40px;
-    padding: 40px;
-    position: relative;
-    overflow: hidden;
-}
-
-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #66a6ff, #ff9999); /* Gradient background */
-    z-index: -1;
-    border-radius: 20px;
-    opacity: 0.9;
-    transition: opacity 0.3s ease;
-}
-
-section:hover::before {
-    opacity: 1;
+.margin_top{
+margin-top: 60px;
 }
 
 
-
-
-
-button {
-    background-color: #ff6600; /* Orange button color */
-    color: #fff;
-    margin-left: 650px;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-button:hover {
-    background-color: #e65c00; /* Darker orange on hover */
+.btns{
+    display: inline-block;
+    padding: 10px 20px;
 }
 .offer{
     display: flex;
@@ -79,7 +49,23 @@ button:hover {
 h2{
     text-align: center;
     font-size: xx-large;
+    margin-bottom: 40px;
 }
 .para{
     text-align: center;
 }
+
+    /* .try_now {
+        display: inline-block;
+        background: #000;
+        color: #fff;
+        border: 1px solid #000;
+        padding: 7px 20px;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        transition: all ease .5s;
+    }
+.try_now{
+
+} */
