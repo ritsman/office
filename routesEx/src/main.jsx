@@ -6,13 +6,15 @@ import {
   RouterProvider, createBrowserRouter,
 } from "react-router-dom"
 
-import MyForm from './components/MyForm.jsx'
+
 
 import PageBody from './components/landingPage/PageBody.jsx'
 import Page2Body from './components/landingPage/Page2Body.jsx'
 import Page3 from './components/landingPage/Page3.jsx'
 import Page4 from './components/landingPage/Page4.jsx'
 import Header from './components/headerAndFooter/Header.jsx'
+import MyForm from './components/form/MyForm.jsx'
+import SuccessPage from './components/form/SuccessPage.jsx'
 
 
 
@@ -32,8 +34,12 @@ const router = createBrowserRouter([
 
   {
     path: '/form',
-    element: <MyForm />,
+    element: <MyForm />
    
+  },
+  {
+    path:'/success',
+    element: <SuccessPage />
   },
   {
     path: '/header',
